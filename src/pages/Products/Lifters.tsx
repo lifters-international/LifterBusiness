@@ -25,7 +25,7 @@ const LiftersProductPage: React.FC = () => {
                     <a href="https://www.lifters.app" target="_blank" rel="noreferrer noopener">Lifters</a>
                 </div>
 
-                <div>
+                <div className="Product-Container-DESC">
                     <div className="Product-Container-description">
                         Lifters is a platform for all fitness enthusiasts, allowing them to find new workouts, match with other fitness enthusiast and eventually find a workout partner.
                     </div>
