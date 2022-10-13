@@ -28,6 +28,10 @@
     text-align: center;
 }
 
+.Product-Container-DESC { 
+    background: #ececec;
+}
+
 .Product-Container-description {
     background-color: #ffffff;
     border: 1px solid black;
@@ -37,6 +41,9 @@
     font-size: 20px;
     font-family: Times New Roman (serif);
     text-align: center;
+    width: 96vw;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .Product-Container-description ul {
