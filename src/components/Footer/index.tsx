@@ -41,7 +41,6 @@ const Footer: React.FC = () => {
                     <div className="FooterContentHeader">Contacts</div>
                     <div className="FooterContentTabs">
                         <a href="/contact">Contact</a>
-                        <a href="/faq">FAQ</a>
                         <a href="mailto:admins@lifters.app">admins@lifters.app</a>
                     </div>
                 </div>
