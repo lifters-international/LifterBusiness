@@ -1,12 +1,14 @@
 import './App.css';
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./pages";
+import { Home, NotFound404, LiftersProductPage } from "./pages";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/products/lifters" element={<LiftersProductPage />} />
+      <Route path="*" element={<NotFound404 />} />
     </Routes>
   );
 }

@@ -1,1 +1,5 @@
-export * from "./Home";
+export * from "./Home"
+
+export * from "./404"
+
+export * from "./Products";

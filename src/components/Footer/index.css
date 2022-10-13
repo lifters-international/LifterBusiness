@@ -1,0 +1,51 @@
+.FooterContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.FooterContent {
+    width: 98vw;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.FooterContentHeader {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.FooterContentTabs {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.FooterContentTabs a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.FooterSocials {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.FooterText {
+    font-size: 14px;
+    color: rgb(104, 104, 104);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-top: 10px;
+    text-align: center;
+}

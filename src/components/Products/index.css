@@ -1,0 +1,48 @@
+.Product {
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+    margin-bottom: 2%;
+    text-decoration: none;
+    box-shadow: 19px 20px 12px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ProductName {
+    font-size: 20px;
+    font-weight: 60;
+    color: black;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.ProductImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.ProductImage img {
+    width: 100%;
+    height: 55vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.ProductDesc {
+    font-size: 15px;
+    font-weight: 60;
+    color: black;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    text-align: center;
+}
