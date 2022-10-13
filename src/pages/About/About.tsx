@@ -35,11 +35,19 @@ export const About = () => {
                         Which includes the CEO, CTO, and CMO. We are all fitness enthusiast and we all have a passion for helping others.
                         Our team members are: 
                         <ul>
-                            <li>CEO: <a href="https://www.linkedin.com/in/chidozien/">Chidozie Nnaji</a></li>
-                            <li>CTO: <a href="https://www.linkedin.com/in/chidozien/">Chidozie Nnaji</a></li>
-                            <li>CMO: <a href="https://www.linkedin.com/in/chidozien/">Chike Nnaji</a></li>
+                            <li>CEO: <a href="https://www.linkedin.com/in/chidozien/">Chidozie Nnaji</a>- Responsible for making all the final decisions regarding Lifters International.</li>
+                            <li>CTO: <a href="https://www.linkedin.com/in/chidozien/">Chidozie Nnaji</a>- Handles all technologies and software used and distrubuted by Lifters International.</li>
+                            <li>CMO: <a href="https://www.linkedin.com/in/chidozien/">Chike Nnaji</a>- Responsible for all business operations, like handling ads, finding new products, workers and etc.</li>
                         </ul>
                     </blockquote>
+                </div>
+
+                <div>
+                    <h1>Our Mission</h1>
+                    <blockquote>
+                        Our mission is to make Lifters the best place for all things GYM🔱. 
+                        We want to make it a place where people can come to find the best gyms, trainers, workout plans, gym clothes, products and more.
+                    </blockquote> 
                 </div>
             </div>
 
