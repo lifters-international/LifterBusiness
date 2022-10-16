@@ -58,12 +58,12 @@ export const Home = () => {
                         to="/products/lifters"
                     />
 
-                    <Products
+                   {/* <Products
                         name="Lifters Ads"
                         description="Our ads allow companies to get their products to the right users."
                         image="/icons/web/image0.png"
                         to="/products/lifters-ads"
-                    />
+    />*/}
                 </div>
             </div>
 

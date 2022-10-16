@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                     <div  className="FooterContentTabs">
                         <a href="/products/lifters">Lifters</a>
                         <a href="/products/food-api">Food API</a>
-                        <a href="/products/lifters-ads">Ads</a>
+                        {/*<a href="/products/lifters-ads">Ads</a>*/}
                     </div>
                 </div>
 
@@ -29,10 +29,8 @@ const Footer: React.FC = () => {
                     <div className="FooterContentHeader">Useful Links</div>
 
                     <div className="FooterContentTabs">
-                        <a href="/about">About Us</a>      
-                        <a href="/events">Events</a>
-                        <a href="/announcements">Announcements</a>               
-                        <a href="terms-service">Terms of Service</a>
+                        <a href="/about">About Us</a>               
+                        <a href="/terms-service">Terms of Service</a>
                         <a href="/privacy-policy">Privacy Policy</a>
                     </div>
                 </div>
@@ -40,8 +38,7 @@ const Footer: React.FC = () => {
                 <div>
                     <div className="FooterContentHeader">Contacts</div>
                     <div className="FooterContentTabs">
-                        <a href="/contact">Contact</a>
-                        <a href="mailto:admins@lifters.app">admins@lifters.app</a>
+                        <a href="/contact">Contact</a> 
                     </div>
                 </div>
             </div>

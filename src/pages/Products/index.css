@@ -8,6 +8,13 @@
     margin-top: 10px;
 }
 
+.Product-Container img {
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    left: 25%;
+}
+
 .Product-Container-title {
     font-size: 100px;
     font-weight: 500;

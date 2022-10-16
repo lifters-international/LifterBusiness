@@ -1,0 +1,69 @@
+.ContactForm {
+    background: white !important;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ContactForm blockquote {
+    border: 1px solid #ccc;
+    border-left: 5px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #f9f9f9;
+    color: rgba(190, 190, 190, 0.842);
+    font-style: italic;
+    width: 65.5vw;
+}
+
+.ContactFormContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ContactFormContainerInput {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 90%;
+    margin-top: 2%;
+}
+
+.ContactFormContainerInput label {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+
+.ContactFormContainerInput input, .ContactFormContainerInput textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.ContactFormContainerInput textarea {
+    width: 66.5vw;
+}
+
+.ContactForm button {
+    background: green;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 67.5vw;
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ContactForm button:hover {
+    background: #000;
+}
