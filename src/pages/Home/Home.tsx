@@ -1,73 +1,44 @@
 import "./index.css";
 import Lottie from 'react-lottie-player';
 
-import LiftersNavBar from "../../assests/LifterNavBar.json";
-
-import { Products, Footer } from "../../components";
+import { Products, Footer, Header } from "../../components";
 
 
 export const Home = () => {
     return (
-        <div>
-            <div className="HomeBanner">
-                <div>
-                    <Lottie
-                        animationData={LiftersNavBar}
-                        loop
-                        play
-                        speed={0.2}
-                        className="LiftersContaineLogo App-logo"
-                    />
-                </div>
-                <div className="HeaderBannerTextContainer">
-                    <div className="HeaderText HomeBannerText">LIFTERS</div>
-                    <div className="HomeBannerText">
-                        <h1> #1 </h1>
-                        <h1> Home For All Things GYM🔱 </h1>
+        <div className="home">
+            <Header />
+
+            <div className="hero-section">
+                <div className="button-group">
+                    <div className="app-store-badge">
+                        <img className="google-logo" src="/google-play-logo.svg" alt="google-play-logo" />
+                        <div className="get-it-on">
+                            GET IT ON
+                        </div>
+                        <img className="google-play-text" src="/google-play-text-logo.svg" alt="Google Play"/>
+                    </div>
+
+                    <div className="app-store-badge">
+                        <img className="google-logo" src="/apple-logo.svg" alt="google-play-logo" />
+                        <div className="get-it-on">
+                            Download on the
+                        </div>
+                        <img className="google-play-text" src="/apple-logo-text.svg" alt="Google Play"/>
                     </div>
                 </div>
+
+                <div className="title red">LIFTERS</div>
+                <div className="sub-title">HOME FOR ALL THINGS GYM</div>
+                <div className="fade-overlay"></div>
+                <img className="landing-page-hero-section-man-image" src="/landing-page-hero-section-man-image.png" alt="man-with-dumbell" />
+                <div className="doorEffects"></div>
+                <img className="hero-section-line-vector" src="/hero-section-line-vector.png" alt="line-vector" />
             </div>
 
-            <div className="HomeSection">
-                <div className="Header">What We Do</div>
-                <div className="WhatWeDo">
-                    Lifters is a software company that hopes to bridge the gap between gym and technology.
-                    We are a team of developers and gym enthusiasts who want to make the gym experience more enjoyable.
-                    To do this we created a platform that allows users to track their progress, find new workouts, and connect with other gym enthusiasts.
-                    Not only that but we provide companies with the ability to get their products to the right users.
-                    This is done through the use of targeted ads and a platform that allows users to find the right products for them.
-                    Lastly we allow companies access to our food api, which allows them to create a more personalized experience for their users.
-                </div>
+            <div className="wwd-section">
+
             </div>
-
-            <div className="HomeSection">
-                <div className="Header">Our Products</div>
-
-                <div className="ProductsContainer">
-                    <Products
-                        name="Food API"
-                        description="Our food api allows companies and developers to create a more personalized experience for their users."
-                        image="/icons/web/image0.png"
-                        to="/products/food-api"
-                    />
-
-                    <Products
-                        name="Lifters"
-                        description="Our site/app allows users to track their progress, find new workouts, and connect with other gym enthusiasts."
-                        image="https://www.lifters.app/LiftersLogo.png"
-                        to="/products/lifters"
-                    />
-
-                   {/* <Products
-                        name="Lifters Ads"
-                        description="Our ads allow companies to get their products to the right users."
-                        image="/icons/web/image0.png"
-                        to="/products/lifters-ads"
-    />*/}
-                </div>
-            </div>
-
-            <Footer />
 
         </div>
     );

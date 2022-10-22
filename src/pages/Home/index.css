@@ -1,107 +1,140 @@
-.HomeBanner {
-    height: 100vh;
-    width: 98vw;
-    border-bottom: 1px solid gainsboro;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.HeaderBannerTextContainer {
+body {
     position: relative;
-    top: 30vh;
-}
-
-.LiftersContaineLogo {
-    height: 50vh;
-    width: -moz-fit-content;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    width: 1440px;
+    height: 3510px;
+    background: #050505;
     color: white;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    top: 3vh;
 }
 
-.LiftersContaineLogo svg {
-    filter: drop-shadow(2vw 5vh 2vh rgb(90, 4, 4));
+.hero-section {
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
 }
 
-.HomeBannerText {
-    font-size: 30px;
-    font-weight: 60;
-    color: red;
-    margin-bottom: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    width: 97vw;
-}
-
-.HeaderText {
-    font-size: 50px;
-    font-weight: 10px;
-}
-
-.App-logo {
-    height: 80vmin;
-    pointer-events: none;
-    float: right;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 2s alternate;
-    }
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: translateY(0%);
-    }
-
-    to {
-        transform: translateY(-5%);
-    }
-}
-
-.WhatWeDo {
-    font-size: 20px;
-    font-weight: 60;
-    text-align: center;
-}
-
-.HomeSection {
-    border-bottom: 1px solid black;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    color: black;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.HomeSection .Header {
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.ProductsContainer {
+.hero-section .button-group {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-top: 2%;
-    gap: 5%;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 271px;
+    height: 40px;
+    left: 2vw;
+    top: 640px;
+}
+
+.hero-section .button-group .app-store-badge {
+    box-sizing: border-box;
+    width: 135px;
+    height: 40px;
+    background: #000000;
+    mix-blend-mode: normal;
+    border: 1px solid #A6A6A6;
+    border-radius: 5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hero-section .button-group .app-store-badge .google-logo {
+    position: relative;
+    top: 15%;
+    left: 5%;
+}
+
+.hero-section .button-group .app-store-badge .get-it-on {
+    position: relative;
+    bottom: 70%;
+    left: 30%;
+    font-size: 10px;
+}
+
+.hero-section .button-group .app-store-badge .google-play-text {
+    position: relative;
+    bottom: 68%;
+    left: 30%;
+}
+
+.hero-section .title {
+    position: absolute;
+    width: 333px;
+    height: 140px;
+    left: 2vw;
+    top: 220px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 140px;
+}
+
+.hero-section .red {
+    color: #FF3636;
+}
+
+.hero-section .sub-title {
+    position: absolute;
+    width: 50vw;
+    height: 240px;
+    left: 2vw;
+    top: 360px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 120px;
+    font-size: 120px;
+}
+
+.hero-section .landing-page-hero-section-man-image {
+    position: absolute;
+    width: 594px;
+    height: 760px;
+    left: 58vw;
+    top: 140px;
+    z-index: -1;
+}
+
+.hero-section .fade-overlay {
+    position: absolute;
+    width: 40vw;
+    height: 99.9vw;
+    left: 28vw;
+    bottom: -30vw;
+    background: linear-gradient(90deg, #050505 14.19%, rgba(5, 5, 5, 0) 104.09%);
+    transform: rotate(-90deg);
+}
+
+.hero-section .doorEffects {
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    background: #FF3636;
+    border-radius: 500px 500px 0px 0px;
+    left: 65vw;
+    top: 15vh;
+    z-index: -2
+}
+
+.hero-section .hero-section-line-vector {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0px;
+    top: 242px;
+    bottom: 269px;
+    z-index: -1
+}
+
+.wwd-section {
+    position: absolute;
+    width: 1200px;
+    height: 670px;
+    left: 20vw;
+    top: 120vh;
+    border: 1px solid white;
 }
