@@ -1,7 +1,6 @@
 import "./index.css";
-import Lottie from 'react-lottie-player';
 
-import { Products, Footer, Header } from "../../components";
+import { Footer, Header } from "../../components";
 
 
 export const Home = () => {
@@ -138,6 +137,7 @@ export const Home = () => {
                 </div>
             </div>
 
+            <Footer />
         </div>
     );
 }
