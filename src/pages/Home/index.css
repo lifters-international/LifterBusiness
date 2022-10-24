@@ -98,9 +98,9 @@ body {
 
 .hero-section .fade-overlay {
     position: absolute;
-    width: 30vw;
-    height: 99.9vw;
-    left: 34vw;
+    width: 40vw;
+    height: 99vw;
+    left: 28vw;
     bottom: -33vw;
     background: linear-gradient(90deg, #050505 14.19%, rgba(5, 5, 5, 0) 104.09%);
     transform: rotate(-90deg);
@@ -119,7 +119,6 @@ body {
 
 .hero-section .hero-section-line-vector {
     position: absolute;
-    width: 100%;
     left: 12vw;
     right: 0px;
     top: 25vh;
