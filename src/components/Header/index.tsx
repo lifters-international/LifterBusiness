@@ -1,19 +1,24 @@
 import React from "react";
+import { useLocation } from 'react-router-dom';
 
 import "./index.css"
 
 const Header: React.FC = () => {
+    const { pathname } = useLocation();
+
+    console.log(pathname)
+
     return (
         <div className="Header">
             <div className="Wrapper">
                 <img src="/icons/logo.png" alt="Logo" className="logo"/>
 
                 <div className="Menu">
-                    <a className="Item Red" href="/">Lifters</a>
-                    <a className="Item Red" href="/" >Food API</a>
-                    <a className="Item" href="/">ADS</a>
-                    <a className="Item" href="/" >About US</a>
-                    <a className="Item" href="/">Contacts</a>
+                    <a className={`Item Red ${pathname === "/" ? "active" : ""}`} href="/">Lifters</a>
+                    <a className={`Item Red ${pathname === "/food-api" ? "active" : ""}`} href="/" >Food API</a>
+                    <a className={`Item ${pathname === "/ads" ? "active" : ""}`} href="/">ADS</a>
+                    <a className={`Item ${pathname === "/about" ? "active" : ""}`} href="/about" >About US</a>
+                    <a className={`Item ${pathname === "/contact" ? "active" : ""}`} href="/">Contacts</a>
                 </div>
             </div>
         </div>

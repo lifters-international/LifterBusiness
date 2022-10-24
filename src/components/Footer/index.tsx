@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
                 <div className="column">
                     <div className="title">Useful Links</div>
                     <div className="menu">
-                        <a>About US</a>
+                        <a href="/about">About US</a>
                         <a>Terms of Service</a>
                         <a>Privacy Policy</a>
                     </div>

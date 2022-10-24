@@ -77,3 +77,9 @@
 .Header .Wrapper .Menu .Red {
     color: #FF3636;
 }
+
+.Header .Wrapper .Menu .active {
+    text-decoration: underline;
+    text-decoration-color: #FF3636;
+    text-decoration-thickness: 2px;
+}

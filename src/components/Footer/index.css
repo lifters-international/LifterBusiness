@@ -105,6 +105,11 @@
     line-height: 18px;
 }
 
+.FooterContainer .columns .column .menu a {
+    text-decoration: none;
+    color: white;
+}
+
 .FooterContainer .copyright {
     position: absolute;
     width: 16vw;
