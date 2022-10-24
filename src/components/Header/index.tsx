@@ -6,12 +6,10 @@ import "./index.css"
 const Header: React.FC = () => {
     const { pathname } = useLocation();
 
-    console.log(pathname)
-
     return (
         <div className="Header">
             <div className="Wrapper">
-                <img src="/icons/logo.png" alt="Logo" className="logo"/>
+                <a href="/"><img src="/icons/logo.png" alt="Logo" className="logo"/></a>
 
                 <div className="Menu">
                     <a className={`Item Red ${pathname === "/" ? "active" : ""}`} href="/">Lifters</a>
