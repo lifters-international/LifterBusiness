@@ -16,7 +16,7 @@ const Header: React.FC = () => {
                     <a className={`Item Red ${pathname === "/food-api" ? "active" : ""}`} href="/" >Food API</a>
                     <a className={`Item ${pathname === "/ads" ? "active" : ""}`} href="/">ADS</a>
                     <a className={`Item ${pathname === "/about" ? "active" : ""}`} href="/about" >About US</a>
-                    <a className={`Item ${pathname === "/contact" ? "active" : ""}`} href="/">Contacts</a>
+                    <a className={`Item ${pathname === "/contact" ? "active" : ""}`} href="/contact">Contacts</a>
                 </div>
             </div>
         </div>

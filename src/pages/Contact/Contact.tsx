@@ -2,7 +2,10 @@ import "./index.css";
 
 import React, { useState } from "react";
 
-import { NavBar, Footer } from "../../components";
+import { BiUser } from "react-icons/bi"
+import { AiOutlineMail } from "react-icons/ai"
+
+import { Header, Footer } from "../../components";
 
 import { useContact } from "../../hooks";
 
@@ -54,48 +57,55 @@ export const Contact = () => {
 
     return (
         <>
-            <NavBar />
+            <Header />
 
-            <div className="ContactForm">
-                <div className="ContactFormText">
-                    <h1> Contact Form </h1>
-                    <blockquote>
-                        If you have any questions, comments, or concerns, please feel free to contact us.
-                        Please fill out the form below and we will get back to you as soon as possible.
-                    </blockquote>
+            <div className="contact-form">
+                <div className="wrapper">
+                    <div className="container form-text-container">
+                        <div className="header-outline">GET IN TOUCH</div>
+                        <div className="header-line">GET IN TOUCH</div>
+
+                        <div className="text">
+                            If you have any questions, comments, or concerns, please
+                            feel free to contact us. Please fill out the form and we will 
+                            get back to you as soon as possible.
+                        </div>
+                    </div>
+
+                    <div className="container form">
+                        <div className="input-container">
+                            <BiUser className="icon" />
+                            <input type="text" placeholder="First Name" value={name} onChange={(event) => setState(prev => ({ ...prev, name: event.target.value}) ) }/>
+                        </div>
+                        
+
+                        <div className="input-container">
+                            <BiUser className="icon" />
+                            <input type="text" placeholder="Last Name" value={lastName} onChange={(event) => setState(prev => ({ ...prev, lastName: event.target.value}) )}/>
+                        </div>
+
+                        <div className="input-container">
+                            <AiOutlineMail className="icon" />
+                            <input type="email" placeholder="Email" value={email} onChange={(event) => setState(prev => ({ ...prev, email: event.target.value}) )}/>
+                        </div>
+
+                        <div className="input-container">
+                            <textarea placeholder="Message" value={message} onChange={(event) => setState(prev => ({...prev, message: event.target.value}) )} />
+                        </div>
+
+
+                        <button type="button" onClick={handleSubmit}>
+                            <div>
+                                SUBMIT
+                            </div>
+                            <div>
+                                &#8599;
+                            </div>
+                        </button>
+
+                    </div>
                 </div>
-
-                <div className="ContactFormContainer">
-                    <div className="ContactFormContainerInput">
-                        <label> First Name </label>
-                        <input type="text" placeholder="First Name" value={name} onChange={(event) => setState(prev => ({ ...prev, name: event.target.value}) ) }/>
-                    </div>
-
-                    <div className="ContactFormContainerInput">
-                        <label> Last Name </label>
-                        <input type="text" placeholder="Last Name" value={lastName} onChange={(event) => setState(prev => ({ ...prev, lastName: event.target.value}) )}/>
-                    </div>
-
-                    <div className="ContactFormContainerInput">
-                        <label> Email </label>
-                        <input type="email" placeholder="Email" value={email} onChange={(event) => setState(prev => ({ ...prev, email: event.target.value}) )}/>
-                    </div>
-
-                    <div className="ContactFormContainerInput">
-                        <label> Phone Number </label>
-                        <input type="tel" placeholder="Phone Number" value={phoneNumber} onChange={(event) => setState(prev => ({ ...prev, phoneNumber: event.target.value}) )}/>
-                    </div>
-
-                </div>
-
-                <div className="ContactFormContainerInput">
-                    <label> Message </label>
-                    <textarea placeholder="Message" value={message} onChange={(event) => setState(prev => ({...prev, message: event.target.value}) )} />
-                </div>
-
-                <button type="button" onClick={handleSubmit}> Submit </button>
             </div>
-
             <Footer />
         </>
     )
