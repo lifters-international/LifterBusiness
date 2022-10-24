@@ -3,14 +3,14 @@ import Lottie from 'react-lottie-player';
 
 import LiftersNavBar from "../../assests/LifterNavBar.json";
 
-import { NavBar, Footer } from "../../components";
+import { Header, Footer } from "../../components";
 
 import "./index.css";
 
 const FoodApiProductPage: React.FC = () => {
     return (
         <>
-            <NavBar />
+            <Header />
 
             <div className="Product-Container">
                 <img
