@@ -4,7 +4,7 @@ import { Footer, Header } from "../../components";
 
 export const About = () => {
     return (
-        <>
+        <div className="about-container">
             <Header />
 
             <div className="about">
@@ -130,6 +130,6 @@ export const About = () => {
             </div>
 
             <Footer />
-        </>
+        </div>
     );
 };

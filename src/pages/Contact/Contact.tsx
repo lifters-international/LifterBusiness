@@ -56,7 +56,7 @@ export const Contact = () => {
     }
 
     return (
-        <>
+        <div className="contact-page">
             <Header />
 
             <div className="contact-form">
@@ -107,6 +107,6 @@ export const Contact = () => {
                 </div>
             </div>
             <Footer />
-        </>
+        </div>
     )
 }
