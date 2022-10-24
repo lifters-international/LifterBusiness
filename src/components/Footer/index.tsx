@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
                 <div className="column">
                     <div className="title">Products</div>
                     <div className="menu">
-                        <a>Lifters</a>
-                        <a>Food API</a>
+                        <a href="/products/lifters">Lifters</a>
+                        <a href="/products/food-api">Food API</a>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
                 <div className="column">
                     <div className="title">Get in touch</div>
                     <div className="menu">
-                        <a>Contacts</a>
+                        <a href='/contact'>Contacts</a>
                     </div>
                 </div>
 
