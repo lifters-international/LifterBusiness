@@ -99,6 +99,7 @@
     flex-direction: row;
     gap: 14vw;
     padding: 15px;
+    border: none;
 }
 
 .contact-page .FooterContainer {

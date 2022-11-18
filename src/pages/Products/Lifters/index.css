@@ -20,6 +20,7 @@
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    margin-bottom: 5vh;
 }
 
 .LiftersProductContainer .title-container .title {
@@ -205,5 +206,5 @@
 }
 
 .FooterContainer {
-    top: 350vh;
+    top: 340vh;
 }

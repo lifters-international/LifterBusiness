@@ -94,7 +94,7 @@ export const Contact = () => {
                         </div>
 
 
-                        <button type="button" onClick={handleSubmit}>
+                        <button onClick={handleSubmit}>
                             <div>
                                 SUBMIT
                             </div>
