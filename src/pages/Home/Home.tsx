@@ -82,16 +82,16 @@ export const Home = () => {
                                 <div className="wrapper">
                                     <div className="logo-title">
                                         <img src="/icons/logo.png" alt="Logo" className="logo" />
-                                        <div className="title">LIFTERS</div>
+                                        <div className="title">LiftersHome</div>
                                     </div>
 
                                     <div className="content">
                                         <div className="paragraph">
-                                            Our food api allows companies and developers to create
-                                            a more personalized experience for their users.
+                                            Lifters Home is the #1 home for all things gym, where you can do everything from find new workout partners,
+                                            to finding new workouts, and even trainers as well.
                                         </div>
 
-                                        <a className="explore-button">
+                                        <a className="explore-button" href="/products/lifters">
                                             <div className="wrapper">
                                                 <div className="text">EXPLORE</div>
                                                 <div className="arrow">&#8599;</div>
@@ -119,7 +119,7 @@ export const Home = () => {
                                             a more personalized experience for their users.
                                         </div>
 
-                                        <a className="explore-button">
+                                        <a className="explore-button" href="/products/food-api">
                                             <div className="wrapper">
                                                 <div className="text">EXPLORE</div>
                                                 <div className="arrow">&#8599;</div>

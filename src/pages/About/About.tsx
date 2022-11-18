@@ -58,7 +58,7 @@ export const About = () => {
                     </div>
 
                     <div className="our-team-cards">
-                        <div className="our-team-card">
+                        <a className="our-team-card" href="https://www.linkedin.com/in/chidozien/" target="_blank" rel="noreferrer noopener">
                             <img src="/about-section-image.png" alt="About Section" className="our-team-card-image" />
                             <div className="our-team-card-text">
                                 <div className="wrapper">
@@ -75,10 +75,10 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div className="our-team-card">
-                            <img src="/about-section-image.png" alt="About Section" className="our-team-card-image" />
+                        <a className="our-team-card" href="https://www.linkedin.com/in/chike-nnaji-51227424a/" target="_blank" rel="noreferrer noopener">
+                            <img src="/icons/web/chike-nnaji.jpg" alt="About Section" className="our-team-card-image" />
                             <div className="our-team-card-text">
                                 <div className="wrapper">
                                     <div className="inside-wrapper">
@@ -92,15 +92,15 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div className="our-team-card">
+                        <a className="our-team-card" href="https://www.fiverr.com/tonysho" target="_blank" rel="noreferrer noopener">
                             <img src="/anton-UI-picture.jpg" alt="About Section" className="our-team-card-image" />
                             <div className="our-team-card-text">
                                 <div className="wrapper">
                                     <div className="inside-wrapper">
                                         <div className="our-team-card-text-heading">Anton Shokaliuk</div>
-                                        <div className="our-team-card-text-subheading">CMO</div>
+                                        <div className="our-team-card-text-subheading">Freelance UI/UX Designer</div>
                                     </div>
 
                                     <div className="our-team-card-text-content">
@@ -108,7 +108,7 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
                     </div>
 

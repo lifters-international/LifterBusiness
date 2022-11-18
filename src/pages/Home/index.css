@@ -302,6 +302,10 @@ body {
     flex-grow: 0;
 }
 
+.our-products-section .wrapper .cards a {
+    text-decoration: none;
+}
+
 .our-products-section .wrapper .cards .card {
     display: flex;
     flex-direction: row;

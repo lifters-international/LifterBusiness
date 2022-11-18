@@ -305,3 +305,8 @@ body {
 .about-container .FooterContainer {
     top: 350vh;
 }
+
+.our-team-cards a {
+    text-decoration: none;
+    color: white;
+}
