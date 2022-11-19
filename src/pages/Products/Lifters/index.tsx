@@ -236,19 +236,14 @@ const LiftersProductPage: React.FC = () => {
                                     </li>
                                 </ul>
                             </div>
-
-                            <div className="sub-warning-small">
-                                This will also mean you will see ads on our site and apps as well.
-                            </div>
                         </div>
 
                     </div>
 
                 </div>
+
+                <Footer />
             </div>
-
-            <Footer />
-
         </>
     );
 }

@@ -3,7 +3,8 @@ import { Header, Footer } from "../../../components";
 
 import { RiFolderChartFill } from "react-icons/ri";
 import { HiOutlineDocumentText } from "react-icons/hi";
-import { FaThumbsUp, FaPython } from "react-icons/fa";
+import { FaThumbsUp, FaPython, FaNode, FaReact } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
 
 import "./index.css";
 
@@ -137,23 +138,31 @@ const FoodApiProductPage: React.FC = () => {
 
                 <div className="api-modules">
                     <div className="api-module">
-                        <FaPython size={60} className="featureBlock-Icon" />
-                        <div>PYTHON</div>
+                        <div className="wrapper">
+                            <FaPython size={60} className="featureBlock-Icon" />
+                            <div>PYTHON</div>
+                        </div>
                     </div>
 
                     <div className="api-module">
-                        <FaPython size={60} className="featureBlock-Icon" />
-                        <div>PYTHON</div>
+                        <div className="wrapper">
+                            <FaNode size={60} className="featureBlock-Icon" />
+                            <div>NODEJS</div>
+                        </div>
                     </div>
 
                     <div className="api-module">
-                        <FaPython size={60} className="featureBlock-Icon" />
-                        <div>PYTHON</div>
+                        <div className="wrapper">
+                            <SiJavascript size={60} className="featureBlock-Icon" />
+                            <div>JAVASCRIPT</div>
+                        </div>
                     </div>
 
                     <div className="api-module">
-                        <FaPython size={60} className="featureBlock-Icon" />
-                        <div>PYTHON</div>
+                        <div className="wrapper">
+                            <FaReact size={60} className="featureBlock-Icon" />
+                            <div>REACTJS</div>
+                        </div>
                     </div>
                 </div>
 

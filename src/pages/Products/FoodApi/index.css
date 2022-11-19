@@ -1,6 +1,6 @@
 .FoodAPIContainer .product-banner-background {
     position: relative;
-    top: 5vh;
+    top: 10vh;
     height: 60vh;
 }
 
@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-    top: 5vh;
+    top: 7vh;
 }
 
 .FoodAPIContainer .product-banner-background .product-banner-red-door {
@@ -27,6 +27,7 @@
     position: relative;
     top: -50vh;
     z-index: -1;
+    border: 1px solid white;
 }
 
 .FoodAPIContainer .product-banner-background .fade-overlay {
@@ -34,7 +35,7 @@
     width: 20vw;
     height: 99vw;
     left: 28vw;
-    bottom: 84vw;
+    bottom: 82vw;
     background: linear-gradient(90deg, #050505 14.19%, rgba(5, 5, 5, 0) 104.09%);
     transform: rotate(-90deg);
     z-index: -1;
@@ -61,27 +62,43 @@
     top: 5vh;
 }
 
+.FoodAPIContainer .Subs-Containers {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .FoodAPIContainer .Subs {
     height: 40vh;
     margin-bottom: 12vh;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .FoodAPIContainer .api-modules {
-    border: 1px solid white;
     position: relative;
-    top: 12vh;
-    width: 80vw;
-    height: 30vh;
+    top: 16vh;
+    width: 67vw;
+    height: 22vh;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     flex-direction: row;
+    gap: 1vw;
 }
 
 .FoodAPIContainer .api-modules .api-module {
-    background: #292929
+    background: #181818;
+    width: 32vw;
+    height: 20.5vh;
+    padding: 10px;
+}
+
+.FoodAPIContainer .api-modules .api-module .wrapper {
+    margin: 7%;
+    font-size: 35px;
 }
 
 .FoodAPIContainer .FooterContainer {
-    top: 330vh;
+    position: relative;
+    top: 30vh;
 }

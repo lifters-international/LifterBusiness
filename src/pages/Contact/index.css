@@ -97,12 +97,12 @@
     font-size: 40px;
     display: flex;
     flex-direction: row;
-    gap: 14vw;
+    justify-content: space-between;
     padding: 15px;
     border: none;
 }
 
 .contact-page .FooterContainer {
-    top: 70vh;
+    top: 80vh;
 }
 
