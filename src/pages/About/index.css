@@ -1,0 +1,295 @@
+body {
+    background: #050505;
+    color: white;
+}
+
+.hero-section {
+    width: 98.6vw;
+    height: 91.5vh;
+    position: relative;
+    margin-top: 9.2vh;
+}
+
+.hero-section .hero-image {
+    width: 98.5vw;
+    height: 100%;
+}
+
+.hero-section .hero-image-fade-overlay {
+    position: relative;
+    width: 30vw;
+    height: 98.9vw;
+    left: 34vw;
+    top: -150vh;
+    background: linear-gradient(90deg, #050505 14.19%, rgba(5, 5, 5, 0) 104.09%);
+    transform: rotate(-90deg);
+}
+
+.hero-section .hero-text {
+    position: relative;
+    top: -60vh;
+    font-size: 10vw;
+    font-weight: 700;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-section {
+    position: relative;
+    width: 98.5vw;
+    height: 70vh;
+    margin-top: 8vh;
+    display: flex;
+}
+
+.about-section .about-section-image {
+    width: 55%;
+    height: 100%;
+}
+
+.about-section .about-section-text {
+    width: 40vw;
+    height: 70vh;
+    position: relative;
+    right: 6vw;
+    bottom: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5vh;
+}
+
+.about-section .about-section-text .about-section-text-heading,
+.our-team-section .our-team-text-heading {
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    height: 15vh;
+}
+
+.about-section .about-section-text .about-section-text-heading 
+.about-section-text-heading-line,
+.our-team-section .our-team-text-heading .our-team-text-heading-line,
+.our-mission-section .our-mission-text-heading .our-mission-text-heading-line
+{
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 60px;
+    position: relative;
+    left: 0px;
+    bottom: 16vh;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.about-section .about-section-text .about-section-text-heading 
+.about-section-text-heading-outline,
+.our-team-section .our-team-text-heading .our-team-text-heading-outline,
+.our-mission-section .our-mission-text-heading .our-mission-text-heading-outline
+{
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 25vh;
+    position: relative;
+    left: 10px;
+    top: 0;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 10vh;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #212121;
+}
+
+.about-section .about-section-text .about-section-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2vh;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.about-section .about-section-text .about-section-text-content div {
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.our-team-section {
+    position: relative;
+    width: 98.6vw;
+    height: 99vh;
+    margin-top: 10vh;
+}
+
+.our-team-section .our-team-text {
+    width: 50vw;
+    height: 20vh;
+    position: relative;
+    right: -0.5vw;
+    top: 4vh;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px; 
+}
+
+.our-team-section .our-team-cards {
+    position: relative;
+    width: 98.6vw;
+    height: 50vh;
+    margin-top: 14vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.our-team-section .our-team-cards .our-team-card {
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.our-team-section .our-team-cards .our-team-card .our-team-card-image {
+    width: 30vw;
+    height: 27vh;
+}
+
+.our-team-section .our-team-cards .our-team-card .our-team-card-text {
+    background: #191919;
+    width: 100%;
+    height: 40vh;
+}
+
+.our-team-section .our-team-cards .our-team-card .our-team-card-text
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.our-team-section .our-team-cards .our-team-card .our-team-card-text
+.wrapper .inside-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 16.5vw;
+    height: 73px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.our-team-section .our-team-cards .our-team-card .our-team-card-text
+.wrapper .inside-wrapper .our-team-card-text-heading {
+    width: 370px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.12em;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.our-team-section .our-team-cards .our-team-card .our-team-card-text
+.wrapper .inside-wrapper .our-team-card-text-subheading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.our-team-section .our-team-cards .our-team-card .our-team-card-text
+.wrapper .our-team-card-text-content {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    position: relative;
+    top: 1vh;
+}
+
+.our-mission-section {
+    width: 45vw;
+    height: 45vh;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-mission-section .our-mission-text .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    bottom: 10vh;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-size: 30px;
+}
+
+.our-mission-section .our-mission-text .subheading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(139, 139, 139);
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    position: relative;
+    bottom: 8vh;
+}
+
+.about-container .FooterContainer {
+    top: 350vh;
+}
+
+.our-team-cards a {
+    text-decoration: none;
+    color: white;
+}

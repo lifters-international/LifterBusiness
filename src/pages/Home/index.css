@@ -1,0 +1,468 @@
+body {
+    background: #050505;
+    color: white;
+}
+
+.home .hero-section {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+}
+
+.hero-section .button-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: relative;
+    width: 50vw;
+    height: 40px;
+    left: 2vw;
+    top: 74vh;
+}
+
+.hero-section .button-group .app-store-badge {
+    box-sizing: border-box;
+    width: 135px;
+    height: 40px;
+    background: #000000;
+    mix-blend-mode: normal;
+    border: 1px solid #A6A6A6;
+    border-radius: 5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hero-section .button-group .app-store-badge .google-logo {
+    position: relative;
+    top: 15%;
+    left: 5%;
+}
+
+.hero-section .button-group .app-store-badge .get-it-on {
+    position: relative;
+    bottom: 70%;
+    left: 30%;
+    font-size: 10px;
+}
+
+.hero-section .button-group .app-store-badge .google-play-text {
+    position: relative;
+    bottom: 65%;
+    left: 30%;
+}
+
+.hero-section .title {
+    position: absolute;
+    width: 50vw;
+    height: 140px;
+    left: 2vw;
+    top: 16vh;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12vw;
+    line-height: 140px;
+}
+
+.hero-section .red {
+    color: #FF3636;
+}
+
+.hero-section .sub-title {
+    position: absolute;
+    width: 80vw;
+    height: 240px;
+    left: 2vw;
+    top: 38vh;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 120px;
+    font-size: 6.8vw;
+}
+
+.hero-section .landing-page-hero-section-man-image {
+    position: absolute;
+    width: 30vw;
+    height: 80vh;
+    left: 60vw;
+    top: 140px;
+    z-index: -1;
+}
+
+.hero-section .fade-overlay {
+    position: absolute;
+    width: 40vw;
+    height: 94vw;
+    left: 28vw;
+    bottom: -33vw;
+    background: linear-gradient(90deg, #050505 14.19%, rgba(5, 5, 5, 0) 104.09%);
+    transform: rotate(-90deg);
+}
+
+.hero-section .doorEffects {
+    position: absolute;
+    width: 25vw;
+    height: 80vh;
+    background: #FF3636;
+    border-radius: 500px 500px 0px 0px;
+    left: 62vw;
+    top: 15vh;
+    z-index: -2
+}
+
+.hero-section .hero-section-line-vector {
+    position: absolute;
+    left: 12vw;
+    right: 0px;
+    top: 25vh;
+    bottom: -22vh;
+    z-index: -1;
+    width: 86vw;
+}
+
+.wwd-section {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    top: 105vh;
+    left: 10vw;
+}
+
+.wwd-section .image-container {
+    position: absolute;
+    width: 30vw;
+    height: 75vh;
+    left: 0px;
+    top: 10px;
+}
+
+.wwd-section .image-container .wwd-section-image1 {
+    position: absolute;
+    width: 10vw;
+    height: 60vh;
+    right: 3vw;
+    top: 15vh;
+}
+
+.wwd-section .image-container .wwd-section-image2 {
+    position: absolute;
+    width: 10vw;
+    height: 60vh;
+    left: 2vw;
+    top: 5vh;
+}
+
+.wwd-section .image-container .phone-preview-circle-effect {
+    position: absolute;
+    width: 20vw;
+    height: 45vh;
+    left: 5vw;
+    top: 0px;
+    background: linear-gradient(180deg, #FF3636 0%, #050505 100%);
+    border-radius: 500px 500px 0px 0px;
+}
+
+.wwd-section .wwd-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    left: 35vw;
+    top: 8vh;
+}
+
+.title-container {
+    width: 50vw;
+    height: 149px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.title-container .title {
+    position: absolute;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 60px;
+    left: 0px;
+    top: 9.7vh;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.title-container .outline {
+    position: absolute;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 25vh;
+    left: 10px;
+    top: 0px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 10vh;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #212121;
+}
+
+.wwd-section .wwd-section-text .text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15vh;
+    width: 50vw;
+    height: 25vh;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.wwd-section .wwd-section-text .text-block .paragraph {
+    width: 50vw;
+    height: 17vh;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 4vh;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.our-products-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 120px;
+    position: relative;
+    width: 78vw;
+    height: 99vh;
+    left: 0px;
+    top: 105vh;
+    margin-right: auto;
+    margin-left: auto;
+    background: #0B0B0B;
+}
+
+.our-products-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 80vw;
+    height: 100vh;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.our-products-section .wrapper .title-container .title,
+.our-products-section .wrapper .title-container .outline
+{
+    top: 10vh;
+    left: 6.5vw;
+}
+
+.our-products-section .wrapper .title-container .title {
+    top: 16vh;
+    z-index: 1;
+}
+
+.our-products-section .wrapper .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10vh;
+    width: 80vw;
+    height: 75vh;
+    order: 1;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-products-section .wrapper .cards a {
+    text-decoration: none;
+}
+
+.our-products-section .wrapper .cards .card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80vw;
+    height: 35vh;
+}
+
+.our-products-section .wrapper .cards .card .product-banner {
+    height: 39vh;
+    order: 0;
+    flex-grow: 1;
+}
+
+.our-products-section .wrapper .cards .card .content-box {
+    width: 40vw;
+    height: 39vh;
+    background: #050505;
+    order: 1;
+    flex-grow: 0;
+    position: relative;
+}
+
+.our-products-section .wrapper .cards .card:nth-of-type(2) .content-box {
+    order: 0;
+    left: 0;
+}
+
+.our-products-section .wrapper .cards .card .content-box .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 30vw;
+    height: 34vh;
+    left: 60px;
+    top: 0;
+}
+
+.our-products-section .wrapper .cards .card .content-box .hero-section-line-vector {
+    position: absolute;
+    left: 3vw;
+    top: 5vh;
+    width: 30vw;
+}
+
+.our-products-section .wrapper .cards .card .content-box .logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: relative;
+    top: 1.5vh;
+}
+
+.our-products-section .wrapper .cards .card .content-box .logo-title .title {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FF3636;
+    position: relative;
+    top: -3.6vh;
+}
+
+.our-products-section .wrapper .cards .card .content-box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 34vw;
+    height: 24vh;
+    position: relative;
+    bottom: 2vh;
+}
+
+.our-products-section .wrapper .cards .card .content-box .content .paragraph {
+    width: 34vw;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.our-products-section .wrapper .cards .card .content-box .content .explore-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 18px 14px 24px;
+    width: 10vw;
+    height: 4.5vh;
+    background: #FF3636;
+    flex: none;
+}
+
+.our-products-section .wrapper .cards .card .content-box .content 
+.explore-button .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    width: 10vw;
+    height: 3vh;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    position: relative;
+    left: 0;
+}
+
+.our-products-section .wrapper .cards .card .content-box .content 
+.explore-button .wrapper .text {
+    width: 4vw;
+    height: 3vh;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.our-products-section .wrapper .cards .card .content-box .content 
+.explore-button .wrapper .arrow {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: #000000;
+    font-size: 20px;
+    -webkit-text-stroke-width: 3px;
+    position: relative;
+    top: -2px;
+}
+
+.home .FooterContainer {
+    position: relative;
+    top: 115vh;
+}

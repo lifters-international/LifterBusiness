@@ -1,0 +1,108 @@
+.contact-form {
+    position: relative;
+    top: 10vh;
+    height: 80vh;
+}
+
+.contact-form .wrapper {
+    height: 60vh;
+    width: 70vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10vw;
+}
+
+.contact-form .wrapper .container {
+    margin-right: 10vw;
+}
+
+.contact-form .wrapper .form-text-container .header-line {
+    width: 15vw;
+    height: 15vh;
+    position: relative;
+    left: 0px;
+    bottom: 15vh;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 60px;
+} 
+
+.contact-form .wrapper .form-text-container .header-outline {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 25vh;
+    position: relative;
+    left: 15px;
+    top: 0;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 10vh;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #212121;
+}
+
+.contact-form .wrapper .form-text-container .text {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: relative;
+    bottom: 8vh;
+}
+
+.contact-form .wrapper .form .input-container {
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 5vh;
+    margin-bottom: 10px;
+}
+
+.contact-form .wrapper .form .input-container .icon {
+    align-self: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-form .wrapper .form .input-container input,
+.contact-form .wrapper .form .input-container textarea
+{
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+.contact-form .wrapper .form .input-container:last-of-type {
+    height: 15vh;
+}
+
+.contact-form .wrapper .form button {
+    width: 100%;
+    color: white;
+    background: #FF3636;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    border: none;
+}
+
+.contact-page .FooterContainer {
+    top: 80vh;
+}
+
