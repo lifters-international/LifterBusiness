@@ -6,7 +6,7 @@
     padding: 26px 80px;
     gap: 10px;
     position: absolute;
-    width: 99vw;
+    width: 98.7vw;
     height: 80px;
     left: 0px;
     top: 0px;
@@ -20,7 +20,7 @@
     align-items: center;
     padding: 0px;
     gap: 799px;
-    width: 100%;
+    width: 90vw;
     height: 28px;
     flex: none;
     order: 0;
@@ -43,7 +43,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
-    width: 417px;
+    width: 25vw;
     height: 18px;
     flex: none;
     order: 1;

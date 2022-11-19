@@ -3,8 +3,8 @@ body {
     color: white;
 }
 
-.hero-section {
-    position: absolute;
+.home .hero-section {
+    position: relative;
     width: 50vw;
     height: 100vh;
     left: 0px;
@@ -99,7 +99,7 @@ body {
 .hero-section .fade-overlay {
     position: absolute;
     width: 40vw;
-    height: 99vw;
+    height: 94vw;
     left: 28vw;
     bottom: -33vw;
     background: linear-gradient(90deg, #050505 14.19%, rgba(5, 5, 5, 0) 104.09%);
@@ -123,15 +123,16 @@ body {
     right: 0px;
     top: 25vh;
     bottom: -22vh;
-    z-index: -1
+    z-index: -1;
+    width: 86vw;
 }
 
 .wwd-section {
     position: absolute;
     width: 80vw;
     height: 80vh;
-    left: 10vw;
     top: 105vh;
+    left: 10vw;
 }
 
 .wwd-section .image-container {
@@ -256,11 +257,13 @@ body {
     align-items: flex-start;
     padding: 80px 120px;
     gap: 10px;
-    position: absolute;
-    width: 86.6vw;
+    position: relative;
+    width: 78vw;
     height: 90vh;
     left: 0px;
-    top: 205vh;
+    top: 105vh;
+    margin-right: auto;
+    margin-left: auto;
     background: #0B0B0B;
 }
 
@@ -310,6 +313,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    border: 1px solid white;
     padding: 0px;
     width: 80vw;
     height: 35vh;
@@ -501,5 +505,6 @@ body {
 }
 
 .home .FooterContainer {
-    top: 315vh;
+    position: relative;
+    top: 150vh;
 }
