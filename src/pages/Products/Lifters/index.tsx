@@ -175,7 +175,7 @@ const LiftersProductPage: React.FC = () => {
                                     </li>
                                     
                                     <li>
-                                        Anylytics
+                                        Analytics
                                     </li>
 
                                     <li>
