@@ -1,7 +1,17 @@
 import './App.css';
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
-import { Home, NotFound404, LiftersProductPage, FoodApiProductPage, About, FoodApi, Contact} from "./pages";
+import { 
+  Home, 
+  NotFound404, 
+  LiftersProductPage, 
+  FoodApiProductPage, 
+  About, 
+  FoodApi, 
+  CreateFoodApiAccount,
+  LoginFoodApiAccount,
+  Contact 
+} from "./pages";
 
 function App() {
   return (
@@ -12,6 +22,8 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/food-api" element={<FoodApi />} />
+      <Route path="/food-api/createAccount" element={<CreateFoodApiAccount />} />
+      <Route path="/food-api/logIn" element={<LoginFoodApiAccount />} />
       <Route path="*" element={<NotFound404 />} />
     </Routes>
   );
