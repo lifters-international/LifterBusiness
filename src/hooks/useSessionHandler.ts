@@ -27,13 +27,13 @@ export const useSessionHandler = () => {
         fetchGraphQl(
             userHasLoggedInMutation,
             {
-                token: localStorage.getItem("token") || null
+                token: localStorage.getItem("foodApiAccountToken") || null
             }
         )
         .then(result => {
             setAuthentication({
                 authenticated: result.data ? true : false,
-                token: result.data ? localStorage.getItem('token') : null,
+                token: result.data ? localStorage.getItem('foodApiAccountToken') : null,
                 loading: false,
                 error: result.errors
             })

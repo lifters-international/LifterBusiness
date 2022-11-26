@@ -10,7 +10,9 @@ import {
   FoodApi, 
   CreateFoodApiAccount,
   LoginFoodApiAccount,
-  Contact 
+  Contact,
+  FoodApiSetUpPayments,
+  FoodApiSetUpPaymentComplete,
 } from "./pages";
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/products/lifters" element={<LiftersProductPage />} />
       <Route path="/products/food-api" element={<FoodApiProductPage />} />
+      <Route path="/food-api/setup-payment" element={<FoodApiSetUpPayments />} />
+      <Route path="/food-api/setup-payment-complete" element={<FoodApiSetUpPaymentComplete />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/food-api" element={<FoodApi />} />
