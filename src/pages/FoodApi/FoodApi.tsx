@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 
 import { RiLockPasswordFill } from "react-icons/ri";
@@ -6,8 +6,8 @@ import { HiOutlineMail } from "react-icons/hi";
 
 import { Loading, Error, Header, Modal } from "../../components";
 import { useSessionHandler } from "../../hooks";
-import { updateFoodApiAccountEmail, updateFoodApiAccountPassword } from "../../graphQlQuieries";
-import { fetchGraphQl } from "../../utils";
+import { updateFoodApiAccountEmail, updateFoodApiAccountPassword, getFoodApiAccountInfor, generateNewFoodApiKeys } from "../../graphQlQuieries";
+import { fetchGraphQl, FoodApiAccountInfor } from "../../utils";
 
 import "./index.css";
 
@@ -16,10 +16,27 @@ const FoodApi: React.FC = () => {
     const navigate = useNavigate();
     const [showModalChangeEmail, setShowModalChangeEmail] = useState(false);
     const [showModalChangePassword, setShowModalChangePassword] = useState(false);
+    const [ accountInfor, setAccountInfor ] = useState<FoodApiAccountInfor | null>(null);
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [newPassword, setNewPassword] = useState("");
+
+
+    useEffect(() => {
+        if ( authentication.token == null) return;
+
+        fetchGraphQl(getFoodApiAccountInfor, { token: authentication.token })
+            .then((data) => {
+                if (data.errors) {
+                    console.log(data.errors);
+                    return alert('Problem getting account information');
+                }
+
+                setAccountInfor(data.data.getFoodApiAccountInfor);
+            });
+
+    }, [ authentication ]);
 
     const changeEmail = async (newEmail: string, password: string) => {
         const response = await fetchGraphQl(updateFoodApiAccountEmail, { newEmail, password: password, token: authentication.token! });
@@ -49,7 +66,7 @@ const FoodApi: React.FC = () => {
         }
     }
 
-    if (authentication.loading) return <Loading />;
+    if ( authentication.loading || accountInfor === null ) return <Loading />;
 
     if (authentication.error) {
         if (
@@ -71,7 +88,20 @@ const FoodApi: React.FC = () => {
 
             <div className="foodApiContainer">
                 <div className="header">
-                    <div>Generate New Keys</div>
+                    <div
+                        onClick={
+                            () => {
+                                fetchGraphQl(generateNewFoodApiKeys, { token: authentication.token! })
+                                    .then((data) => {
+                                        if (data.errors) {
+                                            return alert('Problem generating new keys');
+                                        }
+
+                                        navigate(0);
+                                    });
+                            }
+                        }
+                    >Generate New Keys</div>
 
                     <div
                         onClick={() => navigate("/food-api/setup-payment", { replace: false } )}
@@ -97,13 +127,13 @@ const FoodApi: React.FC = () => {
                         <div className="title">Api Keys:</div>
 
                         <div className="keys">
-                            <div>ApiKey: dsada21312asd-23123123adsd2312312321</div>
-                            <div>TestApiKey: dsada21312asd-23123123adsd2312312321</div>
+                            <div onClick={ () => navigator.clipboard.writeText(`${accountInfor.api_key}`)}>ApiKey: {accountInfor.api_key}</div>
+                            <div onClick={ () => navigator.clipboard.writeText(`${accountInfor.test_api_key}`)}>TestApiKey: {accountInfor.test_api_key}</div>
                         </div>
                     </div>
 
                     <div className="paymentMethods">
-                        <div className="title">Payment Method: Mastercard ending in 1234</div>
+                        <div className="title">Payment Method: {accountInfor.paymentStatement}</div>
                     </div>
                 </div>
             </div>
