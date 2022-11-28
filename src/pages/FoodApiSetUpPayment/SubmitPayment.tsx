@@ -16,7 +16,7 @@ const SubmitPaymentComponent: React.FC<Props> = ({ setError }) => {
         const { error: errStatement } = await stripe.confirmSetup({
             elements,
             confirmParams: {
-                return_url: "http://localhost:3000/food-api/setup-payment-complete"
+                return_url: "https://business.lifters.app/food-api/setup-payment-complete"
             }
         });
 

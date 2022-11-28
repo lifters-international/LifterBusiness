@@ -5,7 +5,7 @@ import { loadStripe } from '@stripe/stripe-js';
 
 import { Header } from "../../components";
 
-const stripePromise = loadStripe('pk_test_51LtTPwB5yAwp5CklgSjB8qC6v2jYZxgp6oTAa31tjutMjqiFQHWNyiEYpSGi2Bgl4LanXzyBECRvqA3poS60yHGv00eXzqq6t9');
+const stripePromise = loadStripe('pk_live_51LtTPwB5yAwp5CklX1Hyp6viNlcom8RXHF4ldHeJMS9hnemCELkREExZdUruXK5WNqXhHDPsMxg3bH4qYofwDp1800CFtfzMzc');
 
 const FoodApiSetUpPaymentComplete: React.FC = () => {
     const stripe = useStripe();
