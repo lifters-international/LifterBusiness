@@ -9,3 +9,11 @@ export * from "./About";
 export * from "./Contact";
 
 export * from "./FoodApi";
+
+export { default as CreateFoodApiAccount } from "./CreateFoodApi";
+
+export { default as LoginFoodApiAccount } from "./LoginFoodApi";
+
+export { default as FoodApiSetUpPayments } from "./FoodApiSetUpPayment";
+
+export { default as FoodApiSetUpPaymentComplete } from "./FoodApiSetUpPaymentComplete";

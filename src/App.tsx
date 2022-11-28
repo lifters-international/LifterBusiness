@@ -1,7 +1,19 @@
 import './App.css';
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
-import { Home, NotFound404, LiftersProductPage, FoodApiProductPage, About, FoodApi, Contact} from "./pages";
+import { 
+  Home, 
+  NotFound404, 
+  LiftersProductPage, 
+  FoodApiProductPage, 
+  About, 
+  FoodApi, 
+  CreateFoodApiAccount,
+  LoginFoodApiAccount,
+  Contact,
+  FoodApiSetUpPayments,
+  FoodApiSetUpPaymentComplete,
+} from "./pages";
 
 function App() {
   return (
@@ -9,9 +21,13 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/products/lifters" element={<LiftersProductPage />} />
       <Route path="/products/food-api" element={<FoodApiProductPage />} />
+      <Route path="/food-api/setup-payment" element={<FoodApiSetUpPayments />} />
+      <Route path="/food-api/setup-payment-complete" element={<FoodApiSetUpPaymentComplete />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/food-api" element={<FoodApi />} />
+      <Route path="/food-api/createAccount" element={<CreateFoodApiAccount />} />
+      <Route path="/food-api/logIn" element={<LoginFoodApiAccount />} />
       <Route path="*" element={<NotFound404 />} />
     </Routes>
   );

@@ -1,0 +1,117 @@
+.FoodApi .Header {
+    width: 100vw;
+}
+
+.foodApiContainer {
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10vh;
+    width: 98vw;
+    
+}
+
+.foodApiContainer .header {
+    border-bottom: 1px solid rgb(49, 49, 49);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foodApiContainer .header div:hover {
+    background: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+
+.foodApiContainer .apiKeys {
+    border-bottom: 1px solid rgb(49, 49, 49);
+}
+
+.foodApiContainer .apiKeys .title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.foodApiContainer .apiKeys .keys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.foodApiContainer .apiKeys .keys div {
+    cursor: pointer;
+}
+
+.foodApiContainer .paymentMethods .title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.FoodApi .ChangeModal {
+    color: white
+}
+
+.FoodApi .ChangeModal .icon-input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #222121;
+    background: #222121;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10vh;
+}
+
+.FoodApi .ChangeModal .icon-input .account-icon {
+    height: 5vh;
+    width: 4vw;
+    margin-right: 10px;
+    position: relative;
+    top: 0;
+}
+
+.FoodApi .ChangeModal .icon-input input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100vw;
+    font-size: 1.2em;
+    margin-left: 10px;
+    color: white;
+    background: #222121;
+}
+
+.FoodApi .ChangeModal .main-button {
+    background: #FF3636;
+    border-radius: 5px;
+    padding: 10px;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+    border: none;
+    position: relative;
+    top: 10vh;
+}

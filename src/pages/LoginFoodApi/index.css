@@ -1,0 +1,146 @@
+.FoodApiAccount .formView {
+    height: 50vh;
+    position: relative;
+    top: 10vh;
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+}
+
+.FoodApiAccount .formView .line-outline .line{
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 60px;
+    position: relative;
+    left: 5px;
+    top: 20vh;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height:  60px;
+}
+
+.FoodApiAccount .formView .line-outline .outline {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 25vh;
+    position: relative;
+    left: 10px;
+    top: 3vh;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 10vh;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #212121;
+}
+
+.FoodApiAccount .formView .form .icon-input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #222121;
+    background: #212121;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FoodApiAccount .formView .form .icon-input .account-icon {
+    height: 5vh;
+    width: 4vw;
+    margin-right: 10px;
+    position: relative;
+    top: 0;
+}
+
+.FoodApiAccount .formView .form .icon-input input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100vw;
+    font-size: 1.2em;
+    margin-left: 10px;
+    color: white;
+    background: #212121;
+}
+
+.FoodApiAccount .formView .form .main-button {
+    background: #FF3636;
+    border-radius: 5px;
+    padding: 10px;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-size: 35px;
+    border: none;
+}
+
+.FoodApiAccount .formView .form .main-button .div {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.FoodApiAccount .formView .form .side-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15vh;
+    background: none;
+    color: #615f5f;
+    gap: 1vw;
+    border: none;
+}
+
+.FoodApiAccount .formView .form .side-button .color-red {
+    color: red;
+}
+
+@media only screen and ( max-width: 845px ) {
+
+    .FoodApiAccount .formView {
+        height: 100vh;
+        position: relative;
+        top: 20vh;
+        left: 30vw;
+        display: grid;
+        grid-template-columns: 100vw;
+    }
+
+    .FoodApiAccount .formView .line-outline {
+        display: none;
+    }
+
+    .FoodApiAccount .formView .form .icon-input {
+        width: 90vw;
+        position: relative;
+        right: 0vw;
+        top: 20vh;
+    }
+
+    .FoodApiAccount .formView .form .main-button {
+        width: 50vw;
+        height: 8vh;
+        font-size: 25px;
+        position: relative;
+        top: 20vh;
+    }
+
+    .FoodApiAccount .formView .form .side-button {
+        position: relative;
+        top: 30vh;
+    }
+}
