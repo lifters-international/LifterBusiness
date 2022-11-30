@@ -66,7 +66,7 @@ const FoodApi: React.FC = () => {
         }
     }
 
-    if ( authentication.loading || accountInfor === null ) return <Loading />;
+    if ( authentication.loading ) return <Loading />;
 
     if (authentication.error) {
         if (
@@ -81,6 +81,8 @@ const FoodApi: React.FC = () => {
         ) return <Navigate to="/food-api/logIn" replace={true} />
         else return <Error {...authentication.error[0]} reload={true} />;
     }
+
+    if ( accountInfor === null ) return <Loading />;
 
     return (
         <div className="FoodApi">

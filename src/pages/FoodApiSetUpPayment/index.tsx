@@ -12,7 +12,7 @@ import { fetchGraphQl } from "../../utils";
 import "./index.css"
 import SubmitPaymentComponent from './SubmitPayment';
 
-const stripePromise = loadStripe('pk_test_51LtTPwB5yAwp5CklgSjB8qC6v2jYZxgp6oTAa31tjutMjqiFQHWNyiEYpSGi2Bgl4LanXzyBECRvqA3poS60yHGv00eXzqq6t9');
+const stripePromise = loadStripe('pk_live_51LtTPwB5yAwp5CklX1Hyp6viNlcom8RXHF4ldHeJMS9hnemCELkREExZdUruXK5WNqXhHDPsMxg3bH4qYofwDp1800CFtfzMzc');
 
 const FoodApiSetUpPayments: React.FC = () => {
     const authentication = useSessionHandler();
