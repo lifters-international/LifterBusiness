@@ -13,6 +13,9 @@ import {
   Contact,
   FoodApiSetUpPayments,
   FoodApiSetUpPaymentComplete,
+  TermsConditions,
+  PrivacyPolicy,
+  TrainersAgreementPolicy
 } from "./pages";
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
       <Route path="/food-api/setup-payment" element={<FoodApiSetUpPayments />} />
       <Route path="/food-api/setup-payment-complete" element={<FoodApiSetUpPaymentComplete />} />
       <Route path="/about" element={<About />} />
+      <Route path="/terms-condition" element={<TermsConditions />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy /> } />
+      <Route path="/trainers-agreement-policy" element={<TrainersAgreementPolicy /> } />
       <Route path="/contact" element={<Contact />} />
       <Route path="/food-api" element={<FoodApi />} />
       <Route path="/food-api/createAccount" element={<CreateFoodApiAccount />} />

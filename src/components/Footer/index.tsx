@@ -30,8 +30,9 @@ const Footer: React.FC = () => {
                     <div className="title">Useful Links</div>
                     <div className="menu">
                         <a href="/about">About US</a>
-                        <a>Terms of Service</a>
-                        <a>Privacy Policy</a>
+                        <a href="/privacy-policy">Privacy Policy</a>
+                        <a href="/terms-condition">Terms & Condition</a>
+                        <a href="/trainers-agreement-policy">Trainers Agreement Policy</a>
                     </div>
                 </div>
 

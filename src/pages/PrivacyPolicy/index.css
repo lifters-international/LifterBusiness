@@ -1,0 +1,28 @@
+.privacy-policy {
+    background: #161616;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 10vh;
+    width: 70vw;
+    margin-right: auto;
+    margin-left: auto;
+    color: #adadad;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.privacy-policy h1 {
+    text-align: center;
+}
+
+.privacy-policy a {
+    color: #adadad;
+    text-decoration: none;
+}
+
+.privacy-policy-page .FooterContainer {
+    position: relative;
+    top: 20vh;
+}
